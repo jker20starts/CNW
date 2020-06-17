@@ -211,6 +211,21 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\QuanLyKhachHang\Controllers\CustomerController.cs" />
+    <Compile Include="Areas\QuanLyKhachHang\Models\Customer.cs" />
+    <Compile Include="Areas\QuanLyKhachHang\Models\DatacontexQLKH.cs" />
+    <Compile Include="Areas\QuanLyKhachHang\Models\Oder.cs" />
+    <Compile Include="Areas\QuanLyKhachHang\Models\OderDetail.cs" />
+    <Compile Include="Areas\QuanLyKhachHang\Models\OderStatu.cs" />
+    <Compile Include="Areas\QuanLyKhachHang\QuanLyKhachHangAreaRegistration.cs" />
+    <Compile Include="Areas\QuanLyMatHang\Controllers\CategoryController.cs" />
+    <Compile Include="Areas\QuanLyMatHang\Controllers\ProductController.cs" />
+    <Compile Include="Areas\QuanLyMatHang\Models\Category.cs" />
+    <Compile Include="Areas\QuanLyMatHang\Models\DataContextQLMH.cs" />
+    <Compile Include="Areas\QuanLyMatHang\Models\Product.cs" />
+    <Compile Include="Areas\QuanLyMatHang\Models\ProductDetail.cs" />
+    <Compile Include="Areas\QuanLyMatHang\Models\Size.cs" />
+    <Compile Include="Areas\QuanLyMatHang\QuanLyMatHangAreaRegistration.cs" />
     <Compile Include="Areas\TTNhom_QLThuVien\Controllers\Giay.cs" />
     <Compile Include="Areas\TTNhom_QLThuVien\Controllers\BookController.cs" />
     <Compile Include="Areas\TTNhom_QLThuVien\Controllers\BorrowGiveBackController.cs" />
@@ -7298,6 +7313,23 @@
     <Content Include="Areas\TTNhom_QLThuVien\Views\_ViewStart.cshtml" />
     <Content Include="Areas\TTNhom_QLThuVien\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\TTNhom_QLThuVien\Views\Giay\Index.cshtml" />
+    <Content Include="Areas\QuanLyKhachHang\Views\web.config" />
+    <Content Include="Areas\QuanLyKhachHang\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\QuanLyKhachHang\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\QuanLyKhachHang\Views\Customer\Index.cshtml" />
+    <Content Include="Areas\QuanLyMatHang\Views\web.config" />
+    <Content Include="Areas\QuanLyKhachHang\Views\Customer\Details.cshtml" />
+    <Content Include="Areas\QuanLyKhachHang\Views\Customer\Create.cshtml" />
+    <Content Include="Areas\QuanLyKhachHang\Views\Customer\Edit.cshtml" />
+    <Content Include="Areas\QuanLyMatHang\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\QuanLyMatHang\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\QuanLyMatHang\Views\Category\Index.cshtml" />
+    <Content Include="Areas\QuanLyMatHang\Views\Category\Details.cshtml" />
+    <Content Include="Areas\QuanLyMatHang\Views\Category\Create.cshtml" />
+    <Content Include="Areas\QuanLyMatHang\Views\Category\Edit.cshtml" />
+    <Content Include="Areas\QuanLyMatHang\Views\Product\Index.cshtml" />
+    <Content Include="Areas\QuanLyMatHang\Views\Product\Create.cshtml" />
+    <Content Include="Areas\QuanLyMatHang\Views\Product\Details.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -7394,6 +7426,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\QuanLyKhachHang\Content\Photo\" />
+    <Folder Include="Areas\QuanLyKhachHang\Data\" />
+    <Folder Include="Areas\QuanLyKhachHang\Views\Product\" />
+    <Folder Include="Areas\QuanLyMatHang\Content\" />
+    <Folder Include="Areas\QuanLyMatHang\Data\" />
     <Folder Include="Areas\TTNhom_QLTTHPT\Models\Access\" />
     <Folder Include="Areas\TTNhom_QLTTHPT\Views\Shared\" />
   </ItemGroup>

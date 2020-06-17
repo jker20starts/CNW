@@ -1,0 +1,76 @@
+﻿@model IEnumerable<coderush.Areas.QuanLyMatHang.Models.Category>
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Adminlte.cshtml";
+}
+<form action="Add" method="post" role="form" enctype="multipart/form-data">
+    <div class="box box-default">
+        <div class="box-header with-border">
+            <h3 class="box-title">Thêm mới </h3>
+
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+            </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Mã</label>
+                        <input type="text" name="ProductID" class="form-control" id="ProductID" placeholder="Enter email">
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Tên</label>
+                        <input type="text" class="form-control" name="ProductName" id="ProductName" placeholder="Enter email">
+                    </div>
+                </div>
+                <!-- /.col -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Thông Tin</label>
+                        <input type="text" class="form-control" name="ProductTT" id="ProductTT" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label>Loại sản phẩm</label>
+                        <select class="form-control" name="CategoryID">
+                            @foreach (var item in Model)
+                            {
+                                <option value="@item.CategoryID">@item.CategoryName</option>
+                            }
+                        </select>
+                    </div>
+                    <!-- /.form-group -->
+
+                </div>
+                <!-- /.col -->
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="form-group">
+                        <label for="exampleInputFile">Chọn ảnh</label>
+                        <input type="file" id="photo" name="photo">
+                        <p class="help-block">Chọn ảnh của sản phẩm</p>
+                    </div>
+
+                    @*<div class="form-group">
+                        <label>Mô tả</label>
+                        <textarea name="description" id="description" class="form-control" rows="3" placeholder="Thêm mô tả ..."></textarea>
+                    </div>*@
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.box-body -->
+
+    </div>
+    <div class="box-footer">
+        <input type="submit" class="btn btn-primary" value="Thêm" />
+    </div>
+</form>
